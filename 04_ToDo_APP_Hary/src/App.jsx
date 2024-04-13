@@ -6,10 +6,13 @@ function App() {
   const [todo, setTodo] = useState("");
   const [todos, setTodos] = useState([]);
 
-  const handleAdd = () => {
-    setTodos([...todos, { id: uuidv4(), todo, isCompleted: false }]);
-    setTodo("");
-    console.log(todos);
+  const handleAdd = (e, todo) => {
+    if (todo !== "") {
+      setTodos([...todos, { id: uuidv4(), todo, isCompleted: false }]);
+      setTodo("");
+
+      console.log(todos);
+    }
   };
   const handleEdit = (e, id) => {
     let t = todos.filter((i) => i.id === id);
@@ -52,7 +55,9 @@ function App() {
             className="w-1/2 rounded-full px-5 py-1"
           />
           <button
-            onClick={handleAdd}
+            onClick={(e) => {
+              handleAdd(e, todo);
+            }}
             className="bg-violet-800 mx-2 rounded-full hover:bg-violet-950 disabled:bg-violet-500 p-4 py-2 text-sm font-bold text-white"
           >
             Save
