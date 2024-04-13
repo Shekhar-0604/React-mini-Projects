@@ -49,7 +49,7 @@ function App() {
             onChange={handleChange}
             value={todo}
             type="text"
-            className="w rounded-full px-5 py-1"
+            className="w-1/2 rounded-full px-5 py-1"
           />
           <button
             onClick={handleAdd}
