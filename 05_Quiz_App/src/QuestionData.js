@@ -1,36 +1,32 @@
-// QuestionBank.js
-
-const qBank = [
+export const QuestionData = [
   {
-    id: 1,
-    question: "What is the capital of Haryana?",
-    options: ["Yamunanagar", "Panipat", "Gurgaon", "Chandigarh"],
-    answer: "Chandigarh",
+    question: "Which language runs in a web browser?",
+    options: ["Java", "C", "Python", "JavaScript"],
+    answer: 4,
   },
   {
-    id: 2,
-    question: "What is the capital of Punjab?",
-    options: ["Patiala", "Ludhiana", "Amritsar", "Chandigarh"],
-    answer: "Chandigarh",
+    question: "What does CSS stand for?",
+    options: [
+      "Central Style Sheets",
+      "Cascading Style Sheets",
+      "Cascading Simple Sheets",
+      "Cars SUVs Sailboats",
+    ],
+    answer: 2,
   },
   {
-    id: 3,
-    question: "What is the capital of India?",
-    options: ["Delhi", "Mumbai", "Kolkata", "Chennai"],
-    answer: "Delhi",
+    question: "What does HTML stand for?",
+    options: [
+      "Hypertext Markup Language",
+      "Hypertext Markdown Language",
+      "Hyperloop Machine Language",
+      "Helicopters Terminals Motorboats Lamborginis",
+    ],
+    answer: 1,
   },
   {
-    id: 4,
-    question: "What is the capital of Uttarakhad?",
-    options: ["Roorkee", "Haridwar", "Dehradun", "Nanital"],
-    answer: "Dehradun",
-  },
-  {
-    id: 5,
-    question: "What is capital of Uttar Pradesh?",
-    options: ["GB Nagar", "Lucknow", "Prayagraj", "Agra"],
-    answer: "Lucknow",
+    question: "What year was JavaScript launched?",
+    options: ["1996", "1995", "1994", "none of the above"],
+    answer: 2,
   },
 ];
-
-export default qBank;
