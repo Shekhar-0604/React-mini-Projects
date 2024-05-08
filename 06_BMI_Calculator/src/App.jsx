@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h2>BMI Calculator</h2>
+      <form action="">
+        <div>
+          <label>Weight (lbs)</label>
+          <input type="text" placeholder="Enter Weight" />
+        </div>
+        <div>
+          <label>Height (in)</label>
+          <input type="text" placeholder="Enter Height" />
+        </div>
+        <div>
+          <button className="btn" type="submit">
+            Submit
+          </button>
+          <button className="btn-btn-outline" type="submit">
+            Submit
+          </button>
+        </div>
+        <div className="center">
+          <h3>Your BMI Score is: </h3>
+          <p></p>
+        </div>
+      </form>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
