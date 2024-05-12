@@ -1,15 +1,13 @@
-import { useState } from "react";
+import React from "react";
 import "./App.css";
-import LoginSignup from "./components/LoginAndSignUp/LoginSignup";
+import Login from "./components/Login";
+import Register from "./components/Register";
+import Home from "./components/Home";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <div>
-        <LoginSignup />
-      </div>
+      <Login />
     </>
   );
 }
